@@ -31,7 +31,7 @@ public class CandidateService {
 
 		Parameters params = ParameterPresets.getDefaultParameters();
 		params = params.setProperty(Parameters.DATA_PATH, "/var/indizes/lucene");
-		access.setup(ParameterPresets.getDefaultParameters());
+		access.setup(params);
 		
 		JSONObject o = new JSONObject();
 		JSONArray a = new JSONArray();
