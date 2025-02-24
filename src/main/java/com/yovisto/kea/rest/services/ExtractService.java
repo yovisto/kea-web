@@ -56,6 +56,8 @@ public class ExtractService {
 		
 		l.info("obj: " + this.hashCode());
 		Parameters p = ParameterPresets.getDefaultParameters();	
+		p.setProperty(Parameters.DATA_PATH, "/var/indices/lucene");
+		
 		
 		l.info("###############################################################");
 
