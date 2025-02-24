@@ -30,7 +30,7 @@ public class CandidateService {
 	public JSONArray getAnnotationsPlain(@PathParam("input") String text) throws Exception {
 
 		Parameters params = ParameterPresets.getDefaultParameters();
-		params.setProperty(Parameters.DATA_PATH, "/var/indizes/lucene");
+		params.setProperty(Parameters.DATA_PATH, "/var/indices/lucene");
 		access.setup(params);
 		
 		JSONObject o = new JSONObject();
