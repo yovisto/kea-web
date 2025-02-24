@@ -15,6 +15,7 @@ import org.codehaus.jettison.json.JSONObject;
 import com.yovisto.kea.ParameterPresets;
 import com.yovisto.kea.util.IndexAccess;
 import com.yovisto.kea.util.IndexAccessImpl;
+import com.yovisto.kea.commons.Parameters;
 
 @Path("candidates")
 public class CandidateService {
