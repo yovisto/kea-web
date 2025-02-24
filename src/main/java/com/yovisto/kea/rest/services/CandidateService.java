@@ -27,6 +27,9 @@ public class CandidateService {
 	@Path("{input}")	
 	@Produces(MediaType.APPLICATION_JSON)
 	public JSONArray getAnnotationsPlain(@PathParam("input") String text) throws Exception {
+
+		Parameters params = ParameterPresets.getDefaultParameters();
+		params = params.setProperty(Parameters.DATA_PATH, "/var/indizes/lucene");
 		access.setup(ParameterPresets.getDefaultParameters());
 		
 		JSONObject o = new JSONObject();
